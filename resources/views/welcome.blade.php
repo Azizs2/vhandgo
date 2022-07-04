@@ -83,15 +83,17 @@
         <div class="header-text">
             <div class="container">
                 <div class="row">
-                    <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
+                    <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
+                        {{-- class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12" --}}
                         <h1>
-                            <strong>@lang('main.header_welcome')</strong>
+                            <strong>Urun Dana Bisnis UKM dan Donasi</strong>
                             <br>
                             <strong></strong>
                         </h1>
-                        {{-- <p>Softy Pinko is a professional Bootstrap 4.0 theme designed by Template Mo
-                            for your company at absolutely free of charge</p> --}}
-                        {{-- <a href="#features" class="main-button-slider">Discover More</a> --}}
+                        <p>Platform penggalangan dana bisnis UKM dan Donasi</p>
+                        <a href="{{url('/mulai_bisnis')}}" class="main-button-slider">Mulai Bisnis</a>
+                        <a href="{{url('/daftar_bisnis')}}" class="main-button-slider">Daftar Bisnis</a>
+                        <a href="{{url('login')}}" class="main-button-slider">Daftar Donasi</a>
                     </div>
                 </div>
             </div>

@@ -21,7 +21,12 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('setlocale/{lang}', [App\Http\Controllers\LanguageController::class, 'switchLang']);
 Route::get('/profile', function () {return view('admin/profile');});
-
+Route::get('/mulai_bisnis', function () {return view('admin/mulai_bisnis');});
+Route::get('/daftar_bisnis', function () {return view('admin/daftar_bisnis');});
+Route::get('/welcome', function () {return view('welcome');});
+Route::get('/register_bisnis', function () {return view('auth/register_bisnis');});
+Route::get('/ketentuan_pengguna', function () {return view('admin/ketentuan_pengguna');});
+Route::get('/ketentuan_privasi', function () {return view('admin/ketentuan_privasi');});
 // Route::get('/supports', [App\Http\Controllers\SupportController::class, 'index']);
 // Route::get('/supports/create', [App\Http\Controllers\SupportController::class, 'create']);
 // Route::post('/supports', [App\Http\Controllers\SupportController::class, 'store']);

@@ -69,30 +69,10 @@ class DonationController extends Controller
     public function store(Request $request)
     {
         try {
-
-        } catch (\Exception $suaaadaadajfshfhu){
-
+            //code...
+        } catch (\Throwable $th) {
+            //throw $th;
         }
-        // $this->validate($request,[
-        //     'admin_id'              => ['required'],
-        //     'description'           => ['required'],
-        //     'date_start'            => ['required'],
-        //     'support_id'            => ['required'],
-        // ]);
-
-        // $donation = new Donation;
-        // $support = new Support;
-
-        // $donation->admin_id     = $request->admin_id;
-        // $donation->description  = $request->description;
-        // $donation->date_start   = $request->date_start;
-        // $donation->support_id   = $request->support_id;
-        // $donation->status       = 0;
-        // if($donation->save()){
-        //     $support->donation_target<$request->donation_amount;
-        // } else {
-        //     $donation->donation_amount  = $request->donation_amount;
-        // }
 
         return redirect('donations');
     }
